@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100vh;
+}
+
+.todos label {
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.todos input {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.computadores-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.computador {
+    border: 2px solid #ddd;
+    border-top: 5px solid;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 120px;
+    background-color: #f9f9f9;
+    box-shadow: #bdbdbd 0px 8px 13px 0;
+}
+
+.computador:hover {
+    position: relative;
+    top: -10px;
+}
+
+.computador.online {
+    border-color: hsl(120, 100%, 25%);
+}
+
+.computador.offline {
+    border-color: red;
+}
+
+.online {
+    background-color: #dff0d8;
+}
+.offline {
+    background-color: #f2dede;
+}
+.status-text {
+    font-weight: bold;
+}
+
+.desligar-selecionados {
+    background-color: #d40202;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 15px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.desligar-selecionados:hover {
+    background-color: #ff0000;
+    position: relative;
+    top: 5px;
+}
+
+.ligar-selecionados {
+    background-color: rgb(1, 165, 56);
+    color: #ffffff;
+    font-size: 17px;
+    padding: 15px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.ligar-selecionados:hover {
+    background-color: rgb(2, 204, 52);
+    position: relative;
+    top: 5px;
+}
+
+.computador-checkbox{
+    cursor: pointer;
+}
+
+.computador h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.computador button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.computador button.desligar {
+    background-color: red;
+    color: white;
+}
+
+.computador button.ligar {
+    background-color: green;
+    color: white;
+}
